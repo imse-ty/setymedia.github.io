@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #F2F2F2;
+}
+
+.prices {
+    width: 1000px;
+    animation: 2s scale ease-in-out, 10s genie infinite alternate ease-in-out;
+    transition: width .8s;
+}
+
+.pWrapper {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    animation: 1s fadein  ease-in-out;
+}
+
+@keyframes fadein {
+    from { opacity: 0;}
+    to   { opacity: 1;}
+}
+
+@keyframes scale {
+    from { width: 800px;}
+    to   { width: 1000px;}
+}
+
+@keyframes genie {
+    0% { transform: scale(1);}
+    50% { transform: scale(.95);}
+    100% { transform: scale(1);}
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    font-family: Montserrat Medium, sans-serif;
+    padding: 40px;
+    text-align: center;
+}
+
+a {
+    transition: color .8s;
+    color: #B5B5B5;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #B5B5B5;
+}
+
+a:hover {
+    color: #333333;
+}
+
+@media only screen and (max-width: 1000px) {
+    @keyframes scale {
+        from { width: 100px;}
+        to   { width: 500px;}
+    }
+    .prices {
+        animation: none;
+        content:url("assets/pricesM.jpg");
+        width: 100vw;
+    }
+
+    .pWrapper {
+        margin-top: 100px;
+        height: 100%;
+        animation: 1s fadein  ease-in-out;
+    }    
+}
