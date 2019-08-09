@@ -94,6 +94,14 @@ nav ul li {
     display: inline-block;
 }
 
+li {
+    transition: .5s font-size;
+}
+
+li:hover {
+    font-size: 30px;
+}
+
 nav, nav a {
     margin: 20px;
     padding: 15px;
@@ -154,5 +162,9 @@ a:hover {
 
     li {
         padding: 10px;
+        transition: none;
     }
+
+    li:hover {
+    } 
 }

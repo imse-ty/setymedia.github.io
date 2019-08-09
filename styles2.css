@@ -41,6 +41,14 @@ ul {
     list-style-type: none;
 }
 
+li {
+    transition: .5s font-size;
+}
+
+li:hover {
+    font-size: 30px;
+}
+
 header {
     font-family: Montserrat Medium, sans-serif;
     padding: 40px;
@@ -76,5 +84,12 @@ a:hover {
         margin-top: 100px;
         height: 100%;
         animation: 1s fadein  ease-in-out;
+    }
+    
+    li {
+        transition: none;
+    }
+
+    li:hover {
     }    
 }
