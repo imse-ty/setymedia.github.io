@@ -133,7 +133,8 @@ a:hover {
     }
 
     header {
-        font-size: 20px;
+        padding: 20px;
+        font-size: 15px;
     }
 
     h1 {
@@ -146,8 +147,12 @@ a:hover {
         font-family: Montserrat Bold, sans-serif;
     }
 
-    nav ul li {
-        display: block;
-        padding: 12px;
+    nav, nav a {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        padding: 10px;
     }
 }
