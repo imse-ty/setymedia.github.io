@@ -116,6 +116,7 @@ a:hover {
     }
 
     .background-wrap img {
+        display: block;
         position: fixed;
         z-index: -1000;
         height: 100%;
