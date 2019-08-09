@@ -36,7 +36,7 @@
     left: 0;
 }
 
-.background-wrap img {
+#gifvideo {
     display: hidden;
 }
 
@@ -115,14 +115,13 @@ a:hover {
         display: none;
     }
 
-    .background-wrap img {
-        display: block;
-        position: fixed;
-        z-index: -1000;
-        height: 100%;
-        overflow: hidden;
-        top: 0;
-        left: 0;
+    #gifvideo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-height: 100%;
+        min-width: 100%;
+        transform: translate(-50%,-50%);
     }
 
     header {
