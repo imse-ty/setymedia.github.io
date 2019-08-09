@@ -36,6 +36,10 @@
     left: 0;
 }
 
+.background-wrap img {
+    display: hidden;
+}
+
 #video-bg-elem {
     position: absolute;
     top: 50%;
@@ -106,6 +110,19 @@ a:hover {
 }
 
 @media only screen and (max-width: 1000px) {
+
+    #video-bg-elem {
+        display: none;
+    }
+
+    .background-wrap img {
+        position: fixed;
+        z-index: -1000;
+        height: 100%;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+    }
 
     header {
         font-size: 20px;
