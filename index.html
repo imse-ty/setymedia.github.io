@@ -1,46 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145311692-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145311692-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'UA-145311692-1');
-</script>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    gtag('config', 'UA-145311692-1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SetyMedia</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0dac5bc6b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="https://www.youtube.com/setymedia">YOUTUBE</a></li>
-                <li><a href="https://www.instagram.com/setymedia">INSTAGRAM</a></li>
-                <li><a href="https://www.twitter.com/setymedia">TWITTER</a></li>
-            </ul>
-        </nav>
+
+<!-- header -->
+
+<div class="wrapperHeader" id="wrapperHeader">
+    <header class="header" id="header">
+        <div class="wrapperLogo" id="logo">
+            <a href="#"><img src="assets/logomark.svg" alt="" shape-rendering="auto"></a>
+        </div>
+        <ul class="nav" id="myLinks">
+            <li><a href="#work">work</a></li>
+            <li><a href="info.html">info</a></li>
+            <li><a href="http://blkwithoutvowels.com/">blog</a></li>
+        </ul>
     </header>
-    <div id="filter"></div>
-    <div class="background-wrap">
-        <video id="video-bg-elem" preload="auto" autoplay="true" loop="loop" muted="muted" poster="assets/bubbles.gif">
-            <source src="assets/video.mp4" type="video/mp4">
-                Video not supported
-        </video>
-        <img src="assets/phonevideo.gif" alt="" id="gifvideo">
+</div> 
+
+<!-- landing page -->
+
+<div class="wrapperLanding" href="#">
+    <div class="background-wrap" data-tilt-gyroscope="false" data-tilt data-tilt-full-page-listening>
+        <img src="assets/centerpiece.gif" alt="" id="gifvideo">
     </div>
-<div class="wrapper">
-    <div class="content">
-        <h1>SetyMedia</h1>
-        <p>Motion Designer</p>
+    <div class="wrapperTitle">
+        <div class="contentTitle">
+            <h1 data-tilt-gyroscope="false" data-tilt data-tilt-full-page-listening>Sety<span>Media<span/></h1>
+        </div>
     </div>
 </div>
 
+<div class="wrapperArrow">
+    <a href="#work"><img src="assets/arrow.svg" alt=""></a>
+</div>
+
+<!-- work -->
+
+    <!-- gallery -->
+
+<div class="wrapperGallery" id="work">
+    <div class="row"> 
+        <div class="column">
+            <a  data-fancybox="gallery" href="assets/img/gallery/scrubby.mp4"><img src="assets/img/gallery/scrubby.png" style="width:100%" data-aos="fade-up"></a>
+            <a data-fancybox="gallery" href="assets/img/gallery/rubiks.mp4"><img src="assets/img/gallery/rubiks.jpg" style="width:100%" data-aos="fade-up"></a>
+            <a data-fancybox="gallery" href="assets/img/gallery/anax.mp4"><img src="assets/img/gallery/anax.png" style="width:100%" data-aos="fade-up"></a>
+        </div>
+
+        <div class="column">
+            <a data-fancybox="gallery" href="assets/img/gallery/sun.mp4"><img src="assets/img/gallery/sun.png" style="width:100%" data-aos="fade-up"></a>
+            <a data-fancybox="gallery" href="assets/img/gallery/redrock.mp4"><img src="assets/img/gallery/redrock.jpg" style="width:100%" data-aos="fade-up"></a>
+            <a data-fancybox="gallery" href="assets/img/gallery/bumpkin.mp4"><img src="assets/img/gallery/bumpkin.png" style="width:100%" data-aos="fade-up"></a>
+        </div>
+
+        <div class="column">
+            <a data-fancybox="gallery" href="assets/img/gallery/citycircle.mp4"><img src="assets/img/gallery/citycircle.png" style="width:100%" data-aos="fade-up"></a>
+            <a data-fancybox="gallery" href="assets/img/gallery/glass.mp4"><img src="assets/img/gallery/glass.png" style="width:100%" data-aos="fade-up"></a>
+            <a data-fancybox="gallery" href="assets/img/gallery/pokemon.mp4"><img src="assets/img/gallery/pokemon.jpg" style="width:100%" data-aos="fade-up"></a>
+        </div>
+    </div>
+</div>
+
+<!-- foooter -->
+
+<div class="wrapperFooter">
+    <div class="social" name="work">
+        <div class="social-icon"><a href="https://www.youtube.com/setymedia/"><i class="fab fa-youtube"></i></a></div>
+        <div class="social-icon"><a href="https://www.instagram.com/setymedia"><i class="fab fa-instagram"></i></a></div>
+        <div class="social-icon"><a href="https://twitter.com/setymedia"><i class="fab fa-twitter"></i></a></div>
+        <div class="social-icon"><a href="http://be.net/imsety"><i class="fab fa-behance-square"></i></a></div>
+        <div class="social-icon"><a href="https://dribbble.com/setymedia"><i class="fab fa-dribbble"></i></a></div>
+        <div class="social-icon"><a href="https://vimeo.com/setymedia"><i class="fab fa-vimeo-v"></i></a></div>
+        <div class="social-icon"><a href="https://www.linkedin.com/in/imsety/"><i class="fab fa-linkedin"></i></a></div>
+    </div>
+    <p class="rights">© 2020 SetyMedia. All Rights Reserved.</p>
+</div>
+
+<!-- scripts -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
